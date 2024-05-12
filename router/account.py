@@ -75,6 +75,8 @@ async def validate_account(account: Account):
                     "success": success
                 }
             else:
+                if user_wrong_password_count.get(acc.username, -1) == -1:
+                    continue
                 user_wrong_password_count[acc.username] += 1
                 if user_wrong_password_count[acc.username] >= 5:
                     err = 'Fails 5 times. Please try again one minutes later.'
