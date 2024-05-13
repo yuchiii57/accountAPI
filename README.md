@@ -4,7 +4,7 @@ Using json file to store the account data
 
 ## BaseURL
 ```
-https://127.0.0.1:8000/account
+https://127.0.0.1:8000
 ```
 
 ## GET /account
