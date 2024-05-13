@@ -4,6 +4,7 @@ services:
     fastapi:
         container_name: fastapi
         build: "."
+        image: ycc/account-backend
         volumes:
           - .:/usr/src/app
         ports:
