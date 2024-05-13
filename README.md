@@ -52,7 +52,7 @@ containing at least 1 uppercase letter, 1 lowercase letter, and 1 number.
 }
 ```
 
-## POST /sccount/validate
+## POST /account/validate
 Validate the account, will to check with json file to confirm user name exits and password is validated. If an acoount password fails 5 times, will return the user should wait one minute before attempting to verify the password again.
 
 ### Request Body
